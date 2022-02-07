@@ -196,7 +196,7 @@ class UpdateCommand extends Command
     {
         $binary = $this->directory.'chromedriver-'.$os.static::$extensions[$os];
 
-        $process = new Process([$binary, '--version']);
+        $process = new Process('$binary --version');
 
         $process->run();
 

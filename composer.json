@@ -9,12 +9,13 @@
         }
     ],
     "require": {
-        "php": ">=5.6.4",
+        "php": ">=7.0",
         "ext-openssl": "*",
-        "ext-zip": "*"
+        "ext-zip": "*",
+        "symfony/console": "^3.2"
     },
     "require-dev": {
-        "orchestra/testbench": "^4.0"
+        "orchestra/testbench": "~3.4"
     },
     "autoload": {
         "psr-4": {
@@ -34,5 +35,10 @@
         }
     },
     "minimum-stability": "dev",
-    "prefer-stable": true
+    "prefer-stable": true,
+    "config": {
+        "allow-plugins": {
+            "kylekatarnls/update-helper": true
+        }
+    }
 }
